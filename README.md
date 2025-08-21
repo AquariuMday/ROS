@@ -3,7 +3,7 @@
 ros2 launch realsense2_camera rs_launch.py \
   enable_rgbd:=true enable_sync:=true align_depth.enable:=true \
   pointcloud.enable:=true \
-  depth_module.profile:=640x480x30 rgb_camera.profile:=640x480x30
+  depth_module.profile:=640x480x30 rgb_camera.profile:=640x480x30\
 ros2 launch rtabmap_launch rtabmap.launch.py \
   rtabmap_args:="--delete_db_on_start" \
   rgb_topic:=/camera/camera/color/image_raw \
